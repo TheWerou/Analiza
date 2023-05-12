@@ -51,12 +51,34 @@
         <h1>Moja strona internetowa</h1>
     </header>
     <main>
-        <p>Witaj na mojej stronie internetowej! Tutaj znajdziesz wiele interesujących informacji na temat mojej
+        <p id="demo">Witaj na mojej stronie internetowej! Tutaj znajdziesz wiele interesujących informacji na temat
+            mojej
             działalności.</p>
+        <iframe id="video" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
+        <button onclick="myFunction()">Click me</button>
+        <button onclick="myFunction1()">And me</button>
+        <button onclick="myFunction2()">Or me</button>
     </main>
     <footer>
         <p>Copyright &copy; 2023</p>
     </footer>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Pierdol sie";
+        }
+
+        function myFunction1() {
+            document.getElementById("demo").innerHTML = "Żartowałem";
+        }
+
+        function myFunction2() {
+            document.getElementById("demo").innerHTML = "";
+            document.getElementById("video").src = 'http://www.youtube.com/embed/oHg5SJYRHA0?autoplay=1';
+        }
+
+    </script>
 </body>
 
 </html>
